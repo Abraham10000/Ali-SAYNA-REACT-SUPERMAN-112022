@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/**************************************
+ ** - 01 - Default
+ **************************************/
+ @font-face {
+  font-family: 'Rajdhani';
+  src: url(../Assets/fonts/Rajdhani-Bold.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'AdventPro';
+  src: url(../Assets/fonts/AdventPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Cantarell';
+  src: url(../Assets/fonts/Cantarell-Regular.ttf);
+}
+
+:root {
+  --ct-dark: #000000;
+  --ct-white: #ffffff;
+  --ct-gray: #7C7675;
+  --ct-red: #B11313;
+  --ct-yellow: #f1C530;
+  --ct-blue: #07338C;
+  --ct-blue-gradient-light: #19587d;
+  --ct-blue-gradient-dark: #193c7d;
+  --ct-red-gradient-light: #b4202e;
+  --ct-red-gradient-dark: #b11313;
+  --ct-blue-red: #07338C;
+  --ct-red-blue: #b4202e;
+  --ct-dark-gradient: #212e3e;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background-color: var(--ct-dark-brown);
+ color: var(--ct-white-light);
+ border: 1px solid var(--gradient-white);
+ margin: 10px 30px 30px 10px;
+ font-family: 'Rajdhani';
+}
+
+.container {
+ width: 90%;
+ margin: 0 auto;
+ border-left: 1px solid var(--ct-white-dark) ;
+ border-right: 1px solid var(--ct-white-dark) ;
 }
