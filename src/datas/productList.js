@@ -10,66 +10,66 @@ import pantoufles from '../assets/produits/pantoufles.jpeg'
 
 export const productList = [
     {
-    name: 'img1',
+    name: 'Backpack',
     category: 'categorie1',
     id: '1',
     cover: backpack,
-    price: 25
+    price: 32
     },
     {
-    name: 'img2',
+    name: 'Poster',
     category: 'categorie2',
     id: '2',
     cover: poster,
-    price: 50
+    price: 15
     },
     {
-    name: 'img3',
+    name: 'Mug',
     category: 'categorie3',
     id: '3',
     cover: mug,
-    price: 20
+    price: 25
     },
     {
-    name: 'img4',
+    name: 'Sweat',
     category: 'categorie4',
     id: '4',
     cover: sweat,
-    price: 70
+    price: 58
     },
     {
-    name: 'img5',
+    name: 'Horloge',
     category: 'categorie5',
     id: '5',
     cover: horloge,
-    price: 2
+    price: 33
     },
     {
-    name: 'img6',
+    name: 'Saleropimento',
     category: 'categorie6',
     id: '6',
     cover: saleropimento,
-    price: 46
+    price: 12
     },
     {
-    name: 'img7',
+    name: 'Tshirt',
     category: 'categorie7',
     id: '7',
     cover: tshirt,
-    price: 75
+    price: 42
     },
     {
-    name: 'img8',
+    name: 'Perfum',
     category: 'categorie8',
     id: '8',
     cover: perfum,
-    price: 26
+    price: 24
     },
     {
-    name: 'img9',
+    name: 'Pantoufles',
     category: 'categorie9',
     id: '9',
     cover: pantoufles,
-    price: 90
+    price: 30
     },
 ]

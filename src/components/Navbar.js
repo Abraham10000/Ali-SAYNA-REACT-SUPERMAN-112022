@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo_blanc from '../assets/logos/logo_blanc.png'
 import facebook from '../assets/icones/facebook.png'
 import instagram from '../assets/icones/instagram.png'
@@ -7,27 +7,27 @@ import twitter from '../assets/icones/twitter.png'
 
 function Navbar() {
     return (
-        <>
+        <>        
         <div className='container'>
             <div className='superman-nav'>
                 <div className='navbar'>
                     <div className='logo'>
-                        <img src={logo_blanc} alt="logo"/>
+                        <img src={logo_blanc} alt="logo" className='w-25'/>
                     </div>
                     <nav className='mean-menu'>
                         <div className='navbar-container'>
                             <ul className='navbar-nav'>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-links'>HOME</Link>
+                                    <Link to='/' className='nav-link'>HOME</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-links'>GAME</Link>
+                                    <Link to='/' className='nav-link'>GAME</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-links'>E-SHOP</Link>
+                                    <Link to='/' className='nav-link'>E-SHOP</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-links'>MON COMPTE</Link>
+                                    <Link to='/' className='nav-link'>MON COMPTE</Link>
                                 </li>
                             </ul>
                         </div>
@@ -48,7 +48,7 @@ function Navbar() {
                     </div>        
                 </div>
             </div>
-        </div>
+        </div>        
         </>
     )
 }

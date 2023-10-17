@@ -32,58 +32,52 @@
   --ct-dark-gradient: #212e3e;
 }
 
-* {
-  background: var(--ct-red);
+* { 
  padding: 0;
  margin: 0;
- box-sizing: border-box;
- background: linear-gradient(70deg, var(--ct-dark) 0%, var(--ct-dark-gradient) 100%);
 }
 
-body {
- background-color: var(--ct-dark);
- color: var(--ct-white);
- border: 1px solid var(--gradient-white);
+body { 
  margin: 10px 30px 30px 10px;
- font-family: 'Rajdhani';
+ font-family: 'Cantarell';
+ font-size: 16px;
 }
 
 .container {
- width: 90%;
- margin: 0 auto;
- border-left: 1px solid var(--ct-white) ;
- border-right: 1px solid var(--ct-white) ;
-}
+  background: linear-gradient(10deg, var(--ct-dark) 0%, var(--ct-dark-gradient) 100%);
+  width: auto;
+  margin: 0 auto;
+ }
 
 img  {
   max-width: 100%;
   height: auto;
 }
 
-h2, h3, h4, h5, .h2 {
-   font-weight: 700;
-   line-height: 1.4;
-   font-family: 'Space_Grotesk_Bold';
- padding: 40px;
- font-size: 32px;
+h1 {
+  font-family: 'AdventPro';
+  font-size: 96px;  
 }
 
-.content {
- width: 45%;
- margin: auto;
- display: flex;
- flex-direction: column;
- justify-content: center;
- text-align: center;
- padding-top: 150px;
+h2 {
+  font-family: 'Rajdhani';
+  font-size: 62px;
+  color: var(--ct-white);
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Rajdhani';
+  font-size: 36px;
+  color: var(--ct-white) !important;
 }
 
 p {
-   font-size: 22px;
+   font-size: 16px;
    line-height: 1.5;
-   margin-bottom: 45px; 
+   font-family: 'Cantarell';
+   color: var(--ct-white);   
    letter-spacing: 0.3px;
-   font-family: 'Space_Grotesk_regular';
+   margin-bottom: 45px;    
 }
 
 .default-btn {
@@ -95,12 +89,14 @@ p {
    text-align: center;
  font-family: 'Rajdhani';
    color: var(--ct-white-light);
- background: linear-gradient(70deg, var(--ct-white) 20%, var(--ct-red) 100%);
+ background: linear-gradient(70deg, var(--ct-blue-gradient-light) 20%, var(--ct-red-gradient-light) 100%);
  -webkit-transition: 0.4s;
    transition: 0.4s;	
-   font-size: 22px;
+   font-size: 20px;
    padding: 14px 40px;
    box-shadow: 0 7px 25px var(--ct-dark);
+   width: 270px;
+   height: 64px;
  margin: 18px;
 }
 
@@ -108,16 +104,16 @@ p {
    position: absolute;
    display: block;
  font-family: 'Rajdhani';
-   background: linear-gradient(var(--ct-white) 60%, var(--ct-red) 100%);
+   background: linear-gradient(var(--ct-blue-gradient-light) 60%, var(--ct-red-gradient-light) 100%);
    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-   -webkit-transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);  
    transform: translate(-50%, -50%);
    z-index: -1;
 }
 
 .default-btn:hover, .default-btn:focus {
-   color: var(--ct-white-light);
+   color: var(--ct-blue-red);
 }
 
 .default-btn:hover span, .default-btn:focus span {
@@ -132,16 +128,16 @@ ul  {
 }
 
 /**************************************
-** - 02 - Navbar + Scroll-bar
+** - 02 - Navbar
 **************************************/
-.batman-nav {
-  padding-top: 15px;
-  padding-bottom: 50px;
+.superman-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-right: 0;
   padding-left: 0;
 }
 
-.batman-nav .navbar {	
+.superman-nav .navbar {	
   padding: 10px 10px;
   display: flex;
   align-items: center;
@@ -151,65 +147,52 @@ ul  {
   margin-left: 50px;
 }
 
-.batman-nav .navbar .navbar-nav .nav-item{
+.superman-nav .mean-menu .navbar-nav {
+  display: inline-block;
+}
+
+.superman-nav .navbar .navbar-nav .nav-item{
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 0;
   padding-right: 0;
   display: inline-block;
   margin-left: 30px;
+  position: relative;
 }
 
-.batman-nav .navbar .navbar-nav .nav-item > a {
+.superman-nav .navbar .navbar-nav .nav-item > .nav-link {
   font-size: 25px;
   font-weight: 500;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani';
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   margin-left: auto;
 }
 
-.batman-nav .navbar .navbar-nav .nav-item > a.active {
+.superman-nav .navbar .navbar-nav .nav-item > .nav-link.active {
   text-decoration: underline 2px;
-}
-
-.scroll-bar { 
- flex-direction: column;
- align-items: center;
- position: fixed;  
- right: 2.6%;
- top: 200px;
- z-index: 999;
-}
-
-.social-icon {
- margin-top: 20px;
- margin-right: 5px;
- text-align: center;
- z-index: 1;
-}
-
-#area{
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
+  font-weight: bolder;
 }
 
 /**************************************
-** - 03 - Home + Scroll button
+** - 03 - Scroll button
 **************************************/
-#batman {
-   z-index: 1;
-   height: 800px;
- width: auto;
- text-align: center;
+
+.scroll-bar { 
+ left: 0%;
+ align-items: left;
+ margin-top: 60px;
+ margin-left: 190px;
+ position: fixed;  
+ top: 200px;
 }
 
-.batman-home .container {
- border-top: 1px solid var(--ct-white-dark);
+.social-icon {
+ margin-top: 70px;
+text-align: center;
+ z-index: 1;
 }
 
 .scroll-btn {
@@ -217,175 +200,166 @@ ul  {
  display: flex;
  justify-content: center;
 }
+
 /**************************************
-** - 04 - Batman Cinéma
+** - 04 - superman Home
+**************************************/
+
+.superman {
+  background-image: url(../src/assets/images/img1.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ padding-top: 150px;
+}
+
+.superman-home .content>img {
+display: flex;
+margin-left: 25%;
+}
+
+.superman-home .intro-title {
+  color: var(--ct-white);
+  font-size: 96px;
+  display: flex;
+  margin-left: 50%;
+  margin-top: -180px;
+  font-style: italic;
+}
+
+.superman-home .intro-subtitle {
+  color: var(--ct-white);
+  font-size: 62px;
+  display: flex;
+  margin-left: 50%;
+  margin-top: -30px;
+  font-style: italic;
+}
+
+.superman-home .container .scroll-btn {  
+  display: none;  
+}
+
+/**************************************
+** - 05 - superman Cinéma
 **************************************/
 .cinema-title {
- padding: 75px;
- font-family: 'Space_Grotesk_Bold';
- font-size: 26px;
+ padding: 25px;
+ margin-left: 7%;
+ font-family: 'Rajdhani';
+ font-size: 36px;
+ color: var(--ct-white);
 }
 
 .cinema-content {
- width: 83.5%;
- margin-top: -100px;
- padding: 75px;
+ width: 82%;
  text-align: justify;
+ font-size: 16px;
+ margin: 0 20px 10px 100px;
 }
 
-.batman-personnage {
+.container .superman-personnage {
+  width: 84%;
  display: flex;
  justify-content: space-between;
- padding: 75px;
- margin-top: -100px;
-}
-
-.bio-info {
- margin-top: 20px; 
- text-align: center;
-}
-
-.bio-info h3 {
- font-family: 'Space_Grotesk_Bold';
- font-size: 20px;
-} 
-
-.bio-info span{
- font-family: 'Space_Grotesk_regular';
-}
-
-.batman-personnage div:hover{
- transform: scale(1.1);
- transition: transform 0.9s ease-in-out;
- transform-origin: center;
+ margin-left: 8%;
+ margin-top: 50px;
+ padding-bottom: 25px;
 }
 
 /**************************************
-** - 05 - Nemesis Section
+** - 06 - Nemesis Section
 **************************************/
 .nemesis-title {
- padding: 75px;
- font-family: 'Space_Grotesk_Bold';
- font-size: 26px;
-}
-
-.nemesis-title >img {
- display: flex;
- flex-direction: column;
- display: block;
- margin-bottom: -55px;
- margin-top: -75px;
- margin-left: 90px;
- width: 150px;
+ padding: 25px;
+ margin-left: 7%;
+ font-family: 'Rajdhani';
+ font-size: 36px;
+ color: var(--ct-white);
 }
 
 .nemesis-content {
- width: 83.5%;
- margin-top: -100px;
- padding: 75px;
- text-align: justify;
-}
-
-.ennemis-personnage {
- display: flex;
- justify-content: space-between;
- padding: 75px;
- margin-top: -100px;
-}
-
-.bio-info {
- margin-top: 20px; 
- text-align: center;
-}
-
-.bio-info h3 {
- font-family: 'Space_Grotesk_Bold';
- font-size: 20px;
-} 
-
-.bio-info span{
- font-family: 'Space_Grotesk_regular';
-}
-
-.ennemis-personnage div:hover{
- transform: scale(1.1);
- transition: transform 0.9s ease-in-out;
- transform-origin: center;
-}
+  width: 82%;
+  text-align: justify;
+  font-size: 16px;
+  margin: 0 20px 10px 100px;
+ }
+ 
+ .container .nemesis-personnage {
+   width: 84%;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-top: 50px;
+  padding-bottom: 25px;
+ }
 
 /**************************************
-** - 06 - Allies Section
+** - 07 - Allies Section
 **************************************/
 .allies-title {
- padding: 75px;
- font-family: 'Space_Grotesk_Bold';
- font-size: 26px;
-}
+  padding: 25px;
+  margin-left: 7%;
+  font-family: 'Rajdhani';
+  font-size: 36px;
+  color: var(--ct-white);
+ }
 
-.allies-title >img {
- float: right ;
- position: relative;
- margin-right: -178px;
- margin-top: -245px;
- width: 40%;
- z-index: 1;
-}
-
-.allies-content {
- width: 85.5%;
- margin-top: -140px;
- padding: 75px;
- text-align: justify;
-}
-
-.allies-personnage {
- display: flex;
- justify-content: space-between;
- padding: 75px;
- margin-top: -100px;
-}
-
-.bio-info {
- margin-top: 20px; 
- text-align: center;
-}
-
-.bio-info h3 {
- font-family: 'Space_Grotesk_Bold';
- font-size: 15px;
-} 
-
-.bio-info span{
- font-family: 'Space_Grotesk_regular';
-}
-
-.allies-personnage div:hover{
- transform: scale(1.1);
- transition: transform 0.9s ease-in-out;
- transform-origin: center;
-}
+ .allies-content {
+  width: 82%;
+  text-align: justify;
+  font-size: 16px;
+  margin: 0 20px 10px 100px;
+ }
+ 
+ .container .allies-personnage {
+   width: 84%;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-top: 50px;
+  padding-bottom: 25px;
+ }
 
 /**************************************
-** - 07 - Justice Section
+** - 08 - Bataille Section
 **************************************/
-.justice-title {
- padding: 75px;
- font-family: 'Space_Grotesk_Bold';
- font-size: 26px;
+.bataille-section .container {
+  background: url(../src/assets/images/img11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+ opacity: (10%);
 }
 
-.justice-content {
- width: 80.5%;
- margin-top: -140px;
- padding: 75px;
- text-align: justify;
-}
+.bataille-title {
+  padding: 25px;
+  margin-left: 7%;
+  font-family: 'Rajdhani';
+  font-size: 36px;
+  color: var(--ct-white);
+ }
 
-.league-image >img {
- margin-top: -50px;
-}
+ .bataille-content {
+  width: 82%;
+  text-align: justify;
+  font-size: 16px;
+  margin: 0 20px 20px 100px;
+  padding-bottom: 25px;
+ }
+
 /**************************************
-** - 08 - Multimedia Section
+** - 09 - Multimedia Section
 **************************************/
 .multimedia-title {
  padding: 75px;
