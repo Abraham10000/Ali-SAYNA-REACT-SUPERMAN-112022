@@ -38,14 +38,14 @@
 }
 
 body { 
- margin: 10px 30px 30px 10px;
+ margin: 10px 20px 20px 10px;
  font-family: 'Cantarell';
  font-size: 16px;
 }
 
 .container {
-  background: linear-gradient(10deg, var(--ct-dark) 0%, var(--ct-dark-gradient) 100%);
-  width: auto;
+  background: linear-gradient(45deg, var(--ct-dark) 0%, var(--ct-dark-gradient) 100%);
+  width: 100%;
   margin: 0 auto;
  }
 
@@ -177,10 +177,10 @@ ul  {
 }
 
 /**************************************
-** - 03 - Scroll button
+** - 03 - Brand control
 **************************************/
 
-.scroll-bar { 
+.control-bar { 
  left: 0%;
  align-items: left;
  margin-top: 60px;
@@ -193,12 +193,6 @@ ul  {
  margin-top: 70px;
 text-align: center;
  z-index: 1;
-}
-
-.scroll-btn {
- margin-top: 220px;
- display: flex;
- justify-content: center;
 }
 
 /**************************************
@@ -332,14 +326,16 @@ margin-left: 25%;
 /**************************************
 ** - 08 - Bataille Section
 **************************************/
-.bataille-section .container {
-  background: url(../src/assets/images/img11.png);
+.bataille-section .container >img {  
   background-size: cover;
+  align-content: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
-  margin: 0;
- opacity: (10%);
+  width: 83%;
+  filter: grayscale(100%) opacity(0.5);
+  position: absolute;
+  margin-top: -15px;
+  z-index: 0;
 }
 
 .bataille-title {
@@ -362,18 +358,20 @@ margin-left: 25%;
 ** - 09 - Multimedia Section
 **************************************/
 .multimedia-title {
- padding: 75px;
- margin-top: -60px; 
- font-family: 'Space_Grotesk_Bold';
- font-size: 26px;
+ padding: 25px;
+ margin-left: 7%;
+ margin-top: -50px; 
+ font-family: 'Rajdhani';
+ font-size: 36px;
+ color: var(--ct-white);
 }
 
 .multimedia-content {
- margin-top: -150px;
- background-color: var(--ct-dark-brown);  
+ margin-top: -80px;
 }
 
 .multimedia-card {
+  background: linear-gradient(50deg, var(--ct-blue-gradient-dark) 10% var(--ct-gray)100%);
  width: 60%;
  margin: 40px auto;
  display: flex;
@@ -388,7 +386,7 @@ margin-left: 25%;
 
 .card-content {
  padding: 20px;
- background: linear-gradient(160deg, var(--ct-gray-light), var(--ct-gray-dark) 60%);
+ background: linear-gradient(50deg, var(--ct-blue-gradient-dark) 10%, var(--ct-gray)100%);
  border-top-right-radius: 20px;
  border-bottom-right-radius: 20px;
 }

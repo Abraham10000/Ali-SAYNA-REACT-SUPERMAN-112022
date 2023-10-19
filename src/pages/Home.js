@@ -8,12 +8,14 @@ import img7 from '../assets/images/img7.png'
 import img8 from '../assets/images/img8.png'
 import img9 from '../assets/images/img9.png'
 import img10 from '../assets/images/img10.png'
-import img12 from '../assets/images/img12.png'
 import img15 from '../assets/images/img15.png'
+import img12 from '../assets/images/img12.png';
 import Polygon from '../assets/icones/Polygon.png'
 import Polygon1 from '../assets/icones/Polygon-1.png'
 import guillemets from '../assets/icones/icon_guillemets_1.png'
 import guillemets1 from '../assets/icones/icon_guillemets_2.png'
+import bataille from '../assets/images/img11.png'
+import MultimediaComponent from '../components/multimedia'
 
 function Home() {
     return (
@@ -83,6 +85,7 @@ function Home() {
             </section>
             <section className="bataille-section">
                 <div className="container">
+                    <img src={bataille} alt="img11" />
                     <div className="bataille-title">
                         <h3>BATMAN V SUPERMAN</h3>
                     </div>
@@ -99,9 +102,9 @@ function Home() {
                     </div>
                     <div className="multimedia-content">
                         <div class="icon-button-prev">
-                            <img src={Polygon} alt="polygon" />
+                            <img src={Polygon1} alt="polygon" />
                         </div>
-                        <div className="multimedia-card">
+                        <div className="multimedia-card">                            
                             <div className="card-icon">
                                 <img src={img12} alt="multimedia icon" />
                             </div>
@@ -109,109 +112,98 @@ function Home() {
                                 <h4>Action, Adventure</h4>
                                 <h5>Superman Man of Steel</h5>
                                 <span>IMDB:<small> 7.1</small></span>
-                                <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent détruire la planète.</p>
+                                <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent de détruire la planète.</p>
                             </div>
-                            <div className="card-content">
-                                <h4>Action, Adventure</h4>
-                                <h5>Superman (1978)</h5>
-                                <span>IMDB:<small> 7.4</small></span>
-                                <p>Un orphelin extra-terrestre est envoyé de sa planète mourante sur Terre, où il grandit et devient le premier et le plus grand super-héros de sa planète d'adoption.</p>
+                            <MultimediaComponent />
                             </div>
-                            <div className="card-content">
-                                <h4>Action, Adventure</h4>
-                                <h5>Batman V Superman</h5>
-                                <span>IMDB:<small> 6.4</small></span>
-                                <p>Craignant que les actions de Superman ne soient pas contrôlées, Batman affronte l'homme d'acier, tandis que le monde débat du type de héros dont il a vraiment besoin.</p>
+                            <div className="icon-button-next">
+                                <img src={Polygon} alt="polygon" />
                             </div>
                         </div>
-                        <div className="icon-button-next">
-                            <img src={Polygon1} alt="polygon" />
+                        <div className="multimedia-bande-annonce">
+                            <a href="" target="_blank">
+                                <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
+                            </a>
                         </div>
                     </div>
-                    <div className="multimedia-bande-annonce">
-                        <a href="" target="_blank">
-                            <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
-                        </a>
-                    </div>
-                </div>
             </section>
-            <div className="contact-section" id="contact">
-                <div className="container">
-                    <div className="contact-title">
-                        <h3>PRENONS CONTACT</h3>
-                    </div>
-                    <div className="contact-content">
-                        <form className="contact-form" action="">
-                            <label for="mail" class="input">ADRESSE EMAIL</label>
-                            <input type="email" name="email" id="email" class="form-control" required placeholder="Adresse email"/>
+                <div className="contact-section" id="contact">
+                    <div className="container">
+                        <div className="contact-title">
+                            <h3>PRENONS CONTACT</h3>
+                        </div>
+                        <div className="contact-content">
+                            <form className="contact-form" action="">
+                                <label for="mail" class="input">ADRESSE EMAIL</label>
+                                <input type="email" name="email" id="email" class="form-control" required placeholder="Adresse email" />
                                 <label for="newsletter" class="input">NEWSLETTER</label>
                                 <p>
                                     <label className="form-check-label" for="customCheck">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                                     Superman :</label>
-                                    <input type="checkbox" class="form-check-input" id="customCheck"/>
+                                    <input type="checkbox" class="form-check-input" id="customCheck" />
                                 </p>
-                            <div className="select">
-                                <select for="newsletter" id="newsletter" name="dropdownlist">
-                                    <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                                    <option className="c-bg" value="Quotidiennement">Une fois par semaine</option>
-                                    <option className="c-bg" value="hebdomadaire">Une fois toute les deux semaines (2 fois par mois)</option>
-                                    <option className="c-bg" value="Mensuel">Une fois par mois</option>
-                                    <option className="c-bg" value="annuel">Une fois tous les trois mois</option>
-                                    <option className="c-bg" value="annuel">Une fois tous les six mois</option>
-                                </select>
-                            </div>
-                            <div className="news">Souhaitez vous recevoir des news</div>
-                            <div className="boutton-group">
-                                <input type="radio" name="choix" id="film" />
-                                <label className="btnform" for="film">Des films</label>
-                                <input type="radio" name="choix" id="comics" />
-                                <label className="btnform" for="comics">Des comics</label>
-                                <input type="radio" name="choix" id="tout" />
-                                <label className="btnform" for="tout">De tout</label>
-                            </div>
-                            <span className="input">MESSAGE</span>
-                            <textarea name="message" id="message" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                            <div className="form-result" id="validator-newsletter">
-                                <button type="submit" className="default-btn">CONFIRMER<span></span></button>
-                            </div>
-                        </form>                     
-                    </div>				
-                </div>
-            </div>
-            <div className="container">            
-                <div className="single-footer-widget">
-                    <div className="icon-guillemets-ouvrant">
-                        <img src={guillemets} alt="icon guillemets"/>
+                                <div className="select">
+                                    <select for="newsletter" id="newsletter" name="dropdownlist">
+                                        <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                                        <option className="c-bg" value="Quotidiennement">Une fois par semaine</option>
+                                        <option className="c-bg" value="hebdomadaire">Une fois toute les deux semaines (2 fois par mois)</option>
+                                        <option className="c-bg" value="Mensuel">Une fois par mois</option>
+                                        <option className="c-bg" value="annuel">Une fois tous les trois mois</option>
+                                        <option className="c-bg" value="annuel">Une fois tous les six mois</option>
+                                    </select>
+                                </div>
+                                <div className="news">Souhaitez vous recevoir des news</div>
+                                <div className="boutton-group">
+                                    <input type="radio" name="choix" id="film" />
+                                    <label className="btnform" for="film">Des films</label>
+                                    <input type="radio" name="choix" id="comics" />
+                                    <label className="btnform" for="comics">Des comics</label>
+                                    <input type="radio" name="choix" id="tout" />
+                                    <label className="btnform" for="tout">De tout</label>
+                                </div>
+                                <span className="input">MESSAGE</span>
+                                <textarea name="message" id="message" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                                <div className="form-result" id="validator-newsletter">
+                                    <button type="submit" className="default-btn">CONFIRMER<span></span></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div className="citation-content">
-                        <div className="text">
-                            <p>- Que représente le S ?
-                                <br/>
-                                - Ce n’est pas un S. Sur ma planète cela signifie espoir.
+                </div>
+                <div className="container">
+                    <div className="single-footer-widget">
+                        <div className="icon-guillemets-ouvrant">
+                            <img src={guillemets} alt="icon guillemets" />
+                        </div>
+                        <div className="citation-content">
+                            <div className="text">
+                                <p>- Que représente le S ?
+                                <br />
+                                    - Ce n’est pas un S. Sur ma planète cela signifie espoir.
                             </p>
+                            </div>
+                            <div className="auteur">
+                                <p><small>Man Of Steel, Lois Lane et Clark Kent</small></p>
+                            </div>
+                            <div className="icon-separation">
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle-plein"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                                <figure className="circle"></figure>
+                            </div>
                         </div>
-                        <div className="auteur">
-                            <p><small>Man Of Steel, Lois Lane et Clark Kent</small></p>
-                        </div>                          
-                        <div className="icon-separation">
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle-plein"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>
-                            <figure className="circle"></figure>                            
+                        <div className="icon-guillemets-fermant">
+                            <img src={guillemets1} alt="icon guillemets" />
                         </div>
-                    </div>                                                     
-                    <div className="icon-guillemets-fermant">
-                        <img src={guillemets1} alt="icon guillemets"/>
                     </div>
-                </div>
-            </div>           
+                </div>           
         </>
-    )
-}
-
-export default Home
+            )
+        }
+        
+        export default Home

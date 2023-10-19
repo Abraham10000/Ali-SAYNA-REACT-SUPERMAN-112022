@@ -33,8 +33,8 @@ function Navbar() {
                         </div>
                     </nav>           
 
-                    <div className="brand-control">
-                        <ul className="scroll-bar">                           
+                    <div className="brand-control position-fixed">
+                        <ul className="control-bar">                           
                             <li className="social-icon">
                                 <img src={facebook} alt="facebook"/>
                             </li>
