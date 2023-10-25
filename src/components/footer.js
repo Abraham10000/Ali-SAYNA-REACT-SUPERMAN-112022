@@ -11,30 +11,32 @@ function footer() {
     return (
         <>
             <div className="single-footer-widget">
-                <div className="footer-logo">
-                    <img src={icon_WB} alt="logo WB"/>
-                    <p><small>Ce projet respecte l’univers cinématographique des films Superman.</small></p>
-                </div>                
-                <ul className="footer-logo">
-                    <li>
-                        <img src={logo_sayna_white} alt="logo Sayna"/>
-                    </li>                    
-                    <li>
-                        <img src={icon_x} alt="icon X"/>
-                    </li>
-                    <li>
-                        <img src={icon_DC} alt="icon DC"/>
-                    </li>
-                    <li>
-                        <img src={facebook} alt="icon facebook"/>
-                    </li>
-                    <li>
-                        <img src={instagram} alt="icon instagram"/>
-                    </li> 
-                    <li>
-                        <img src={twitter} alt="icon twitter"/>
-                    </li>                   
-                </ul>
+                <div className="container">
+                    <div className="footer-logo">
+                        <img src={icon_WB} alt="logo WB"/>
+                        <p><small>Ce projet respecte l’univers cinématographique des films Superman.</small></p>
+                    </div>                
+                    <ul className="footer-logo">
+                        <li>
+                            <img src={logo_sayna_white} alt="logo Sayna"/>
+                        </li>                    
+                        <li>
+                            <img src={icon_x} alt="icon X"/>
+                        </li>
+                        <li>
+                            <img src={icon_DC} alt="icon DC"/>
+                        </li>
+                        <li>
+                            <img src={facebook} alt="icon facebook"/>
+                        </li>
+                        <li>
+                            <img src={instagram} alt="icon instagram"/>
+                        </li> 
+                        <li>
+                            <img src={twitter} alt="icon twitter"/>
+                        </li>                   
+                    </ul>
+                </div>
             </div>  
         </>
     )

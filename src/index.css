@@ -88,7 +88,7 @@ p {
    z-index: 1;
    text-align: center;
  font-family: 'Rajdhani';
-   color: var(--ct-white-light);
+   color: var(--ct-white);
  background: var(--ct-blue-gradient-dark);
  -webkit-transition: 0.4s;
    transition: 0.4s;	
@@ -114,7 +114,8 @@ p {
 }
 
 .default-btn:hover, .default-btn:focus {
-   color: var(--ct-blue-red);
+   color: var(--ct-white);
+   background: linear-gradient(10deg, var(--ct-blue-gradient-light) 20%, var(--ct-red-gradient-light) 100%);
 }
 
 .default-btn:hover span, .default-btn:focus span {
@@ -576,7 +577,7 @@ margin-top: 10px;
  font-size: 16px;
  font-weight: 100;
  margin-top: 15px;
- font-family: "Space_Grotesk_Regular";
+ font-family: "Rajdhani";
 }
 
 #contact .select #newsletter select {
@@ -630,28 +631,34 @@ margin-top: 10px;
 }
 
 /**************************************
-** - 10 - footer
+** - 11 - footer
 **************************************/
-#citation .single-footer-widget {
- padding: 90px;
+#citation .container {
+  height: 500px;
+  background: linear-gradient(160deg, var(--ct-gray), var(--ct-dark-gradient)) ;
+}
+
+.single-citation-widget {    
+ padding: 100px;
+ margin: 0 100px 0 100px; 
 }
 
 .citation-content {
- width: 50%;
+ width: 70%;
  text-align: center;
  margin: 30px auto;
  margin-top: 0;
 }
 
 .text{
- font-family: "Space_Grotesk_Regular";
+ font-family: "Rajdhani";
  font-size: 6px;
 }
 
-.auteur{
+.auteur {
  padding: 15px;
  color: var(--ct-white-dark);
- font-family: "Space_Grotesk_Regular";
+ font-family: "Rajdhani";
  font-size: 2px;
  margin-top: -20px;
 }
@@ -689,6 +696,15 @@ margin-bottom: 5px;
  float: right;
 }
 
+ .single-footer-widget .container {    
+  padding: 60px;
+  background: linear-gradient(10deg, var(--ct-gray), var(--ct-dark-gradient)) ;
+ }
+
+.footer-logo >img {
+  margin-right: -15px;
+}
+
 .footer-logo {
  display: flex;
  align-items: center;
@@ -697,7 +713,7 @@ margin-bottom: 5px;
 }
 
 .footer_text{
- font-family: "Space_Grotesk_Regular";
+ font-family: "Rajdhani";
  font-size: 12px;
  padding-top: 200px;
  text-align: center;
@@ -712,5 +728,5 @@ margin-bottom: 5px;
 }
 
 .footer-logo >img {
- margin-bottom: 42.5px;
+ margin-bottom: 20px;
 }

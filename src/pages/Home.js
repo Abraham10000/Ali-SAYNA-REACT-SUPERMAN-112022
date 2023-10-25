@@ -130,52 +130,54 @@ function Home() {
                         </div>
                     </div>
             </section>
-                <div className="contact-section" id="contact">
-                    <div className="container">
-                        <img src={team} alt="img16" />
-                        <div className="contact-title">
-                            <h3>PRENONS CONTACT</h3>
-                        </div>
-                        <div className="contact-content">
-                            <form className="contact-form" action="">
-                                <label for="mail" class="input">ADRESSE EMAIL</label>
-                                <input type="email" name="email" id="email" class="form-control" required placeholder="Adresse email" />
-                                <label for="newsletter" class="input">NEWSLETTER</label>
-                                <p>
-                                    <label className="form-check-label" for="customCheck">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
-                                    Superman :</label>
-                                    <input type="checkbox" class="form-check-input" id="customCheck" />
-                                </p>
-                                <div className="select">
-                                    <select for="newsletter" id="newsletter" name="dropdownlist">
-                                        <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                                        <option className="c-bg" value="Quotidiennement">Une fois par semaine</option>
-                                        <option className="c-bg" value="hebdomadaire">Une fois toute les deux semaines (2 fois par mois)</option>
-                                        <option className="c-bg" value="Mensuel">Une fois par mois</option>
-                                        <option className="c-bg" value="annuel">Une fois tous les trois mois</option>
-                                        <option className="c-bg" value="annuel">Une fois tous les six mois</option>
-                                    </select>
-                                </div>
-                                <div className="news">Souhaitez vous recevoir des news</div>
-                                <div className="boutton-group">
-                                    <input type="radio" name="choix" id="film" />
-                                    <label className="btnform" for="film">Des films</label>
-                                    <input type="radio" name="choix" id="comics" />
-                                    <label className="btnform" for="comics">Des comics</label>
-                                    <input type="radio" name="choix" id="tout" />
-                                    <label className="btnform" for="tout">De tout</label>
-                                </div>
-                                <span className="input">MESSAGE</span>
-                                <textarea name="message" id="message" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                                <div className="form-result" id="validator-newsletter">
-                                    <button type="submit" className="default-btn">CONFIRMER<span></span></button>
-                                </div>
-                            </form>
-                        </div>
+            <div className="contact-section" id="contact">
+                <div className="container">
+                    <img src={team} alt="img16" />
+                    <div className="contact-title">
+                        <h3>PRENONS CONTACT</h3>
+                    </div>
+                    <div className="contact-content">
+                        <form className="contact-form" action="">
+                            <label for="mail" class="input">ADRESSE EMAIL</label>
+                            <input type="email" name="email" id="email" class="form-control" required placeholder="Adresse email" />
+                            <label for="newsletter" class="input">NEWSLETTER</label>
+                            <p>
+                                <label className="form-check-label" for="customCheck">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
+                                Superman :</label>
+                                <input type="checkbox" class="form-check-input" id="customCheck" />
+                            </p>
+                            <div className="select">
+                                <select for="newsletter" id="newsletter" name="dropdownlist">
+                                    <option selected="selected">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                                    <option className="c-bg" value="Quotidiennement">Une fois par semaine</option>
+                                    <option className="c-bg" value="hebdomadaire">Une fois toute les deux semaines (2 fois par mois)</option>
+                                    <option className="c-bg" value="Mensuel">Une fois par mois</option>
+                                    <option className="c-bg" value="annuel">Une fois tous les trois mois</option>
+                                    <option className="c-bg" value="annuel">Une fois tous les six mois</option>
+                                </select>
+                            </div>
+                            <div className="news">Souhaitez vous recevoir des news</div>
+                            <div className="boutton-group">
+                                <input type="radio" name="choix" id="film" />
+                                <label className="btnform" for="film">Des films</label>
+                                <input type="radio" name="choix" id="comics" />
+                                <label className="btnform" for="comics">Des comics</label>
+                                <input type="radio" name="choix" id="tout" />
+                                <label className="btnform" for="tout">De tout</label>
+                            </div>
+                            <span className="input">MESSAGE</span>
+                            <textarea name="message" id="message" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                            <div className="form-result" id="validator-newsletter">
+                                <button type="submit" className="default-btn">CONFIRMER<span></span></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
+
+            <div class="footer" id="citation">
                 <div className="container">
-                    <div className="single-footer-widget">
+                    <div className="single-citation-widget">                    
                         <div className="icon-guillemets-ouvrant">
                             <img src={guillemets} alt="icon guillemets" />
                         </div>
@@ -184,10 +186,10 @@ function Home() {
                                 <p>- Que représente le S ?
                                 <br />
                                     - Ce n’est pas un S. Sur ma planète cela signifie espoir.
-                            </p>
+                                </p>
                             </div>
                             <div className="auteur">
-                                <p><small>Man Of Steel, Lois Lane et Clark Kent</small></p>
+                                <p className="pt-3"><small>Man Of Steel, Lois Lane et Clark Kent</small></p>
                             </div>
                             <div className="icon-separation">
                                 <figure className="circle"></figure>
@@ -205,7 +207,8 @@ function Home() {
                             <img src={guillemets1} alt="icon guillemets" />
                         </div>
                     </div>
-                </div>           
+                </div>
+            </div>           
         </>
             )
         }
