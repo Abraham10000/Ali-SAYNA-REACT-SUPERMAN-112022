@@ -89,7 +89,7 @@ p {
    text-align: center;
  font-family: 'Rajdhani';
    color: var(--ct-white-light);
- background: linear-gradient(70deg, var(--ct-blue-gradient-light) 20%, var(--ct-red-gradient-light) 100%);
+ background: var(--ct-blue-gradient-dark);
  -webkit-transition: 0.4s;
    transition: 0.4s;	
    font-size: 20px;
@@ -98,6 +98,7 @@ p {
    width: 270px;
    height: 64px;
  margin: 18px;
+ border-radius: 1rem;
 }
 
 .default-btn span {
@@ -360,23 +361,23 @@ margin-left: 25%;
 .multimedia-title {
  padding: 25px;
  margin-left: 7%;
- margin-top: -50px; 
+ margin-top: -30px; 
  font-family: 'Rajdhani';
  font-size: 36px;
  color: var(--ct-white);
 }
 
 .multimedia-content {
- margin-top: -80px;
+ margin-top: -70px;
+ background: linear-gradient(45deg, var(--ct-dark) 0%, var(--ct-dark-gradient) 100%);
 }
 
 .multimedia-card {
-  background: linear-gradient(50deg, var(--ct-blue-gradient-dark) 10% var(--ct-gray)100%);
  width: 60%;
  margin: 40px auto;
  display: flex;
  justify-content: space-between;
- align-items: center;
+ align-items: center; 
 }
 
 .card-icon{
@@ -384,22 +385,27 @@ margin-left: 25%;
  height: auto;
 }
 
+.card-icon >img {
+  margin-left: 40px;
+}
+
 .card-content {
- padding: 20px;
- background: linear-gradient(50deg, var(--ct-blue-gradient-dark) 10%, var(--ct-gray)100%);
+ padding: 28px;
+ background: linear-gradient(50deg, var(--ct-gray) 10%, var(--ct-blue-gradient-dark) 100%);
  border-top-right-radius: 20px;
+ align-content: center;
  border-bottom-right-radius: 20px;
 }
 
 .card-content > h4 {
-   font-family: 'Space_Grotesk_Regular';
+   font-family: 'Rajdhani';
    font-size: 15px;
    text-transform: uppercase; 
    padding: 0;
 }
 
 .card-content > h5 {
- font-family: 'Space_Grotesk_Regular';
+ font-family: 'Rajdhani';
  font-size: 25px;
  margin-left: 0;
  padding: 0;
@@ -409,15 +415,16 @@ margin-left: 25%;
  font-family: 'Rajdhani';
  font-size: 22px;
  padding-top: 5px;
+ color: var(--ct-white);
 }
 
 .card-content span > small {
-color: var(--ct-yellow-light);
-font-family: 'Space_Grotesk_Bold';  
+color: var(--ct-yellow);
+font-family: 'Rajdhani';  
 }
 
 .card-content p {
- font-family: 'Space_Grotesk_Regular';
+ font-family: 'Rajdhani';
  font-size: 14px;
  padding-top: 5px;
  line-height: 1.3;
@@ -445,53 +452,78 @@ font-family: 'Space_Grotesk_Bold';
  display: flex;
  flex-direction: column;
  margin-left: 55px;
- padding-bottom: 160px;
+ padding-bottom: 350px;
+}
+
+.multimedia-bande-annonce >a {
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  margin-top: -350px;
 }
 
 /**************************************
-** - 09 - Contact Section
+** - 10 - Contact Section
 **************************************/
 #contact {
  padding: 65px auto;
- background: linear-gradient(120deg, var(--ct-gray-light), var(--ct-gray-dark) 80%);
 }
 
-form {
- padding-bottom: 35px;
+.contact-section .container >img {  
+  background-size: cover;
+  align-content: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 83%;
+  filter: grayscale(50%) opacity(0.5);
+  position: absolute;
+  z-index: 0;
 }
 
-#contact .contact-content {
- width: 60%;
- margin: auto;
-}
+#contact .contact-title > h3 {
+  font-family: "Rajdhani";
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  padding-top: 45px;
+  color: var(--ct-white);
+ }
 
-#contact .contact-title > h2 {
- font-family: "Space_Grotesk_Bold";
- text-align: center;
- font-size: 30px;
- margin-bottom: 30px;
- letter-spacing: 2px;
- padding-top: 45px;
-}
+ #contact .contact-content form {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 35px;
+  color: var(--ct-white);
+  font-family: 'Rajdhani';
+ }
 
 #contact .contact-content .input {
- font-family: "Space_Grotesk_Regular";
+ font-family: "Rajdhani";
  font-size: 22px;
  display: block;
- margin-top: 50px;
+ margin-top: 30px;
 }
 
-#contact .form-check-label{
- width: 70%;
- font-family: "Space_Grotesk_Regular";
- font-size: 18px;
- padding-top: 40px;
+#contact .form-check-label {
+ width: 80%;
+ font-family: "Rajdhani";
+ font-size: 16px;
+ padding-top: 30px;
+ color: var(--ct-white);
 }
 
-.boutton-group, .news{
-   font-family: "Space_Grotesk_Regular";
+#contact .form-check-input {
+  margin-top: 58px;
+  position: relative;
+  display: inline-block;
+  margin-left: -350px;
+}
+
+.boutton-group .news {
+   font-family: "Rajdhani";
    font-size: 18px;
-   padding-top: 40px;
+   padding-top: 30px;
 }
 
 .news {
@@ -499,33 +531,41 @@ form {
 }
 
 #contact .contact-content .boutton-group {
- padding: 10px;
+margin-top: 10px;
+ padding: 0;
  display: flex;
  justify-content: space-around;
 }
 
 #contact .select, #contact .news {
-   margin-top: 60px;
-   border-bottom: 1px solid white;
+   margin-top: 40px;
+   padding-top: 10px;
+   padding-bottom: 0;
+   border-bottom: 1px solid var(--ct-white);
 }
 
 #contact .contact-content .select, #contact .contact-content .news {
  margin-top: 15px;
- border-bottom: 1px solid var(--color-white);
+ border-bottom: 1px solid var(--ct-white);
 }
 
 #contact .contact-content input[type=email], #contact .contact-content textarea {
    display: block;
+   font-family: 'Rajdhani';
    width: 100%;
    background-color: transparent;
    border-top: none;
    border-left: none;
    border-right: none;
-   border-bottom: 1px solid var(--ct-white-light);
-   padding: 10px 0;
-   margin-top: 20px;
+   border-bottom: 1px solid var(--ct-white);
+   padding: 0;
+   margin-top: 18px;
    outline: none;
-   color: var(--ct-white-light);
+   color: var(--ct-white);
+}
+
+#contact .contact-content textarea {  
+  height: 4vmin;
 }
 
 #contact .contact-content .select #newsletter {
@@ -544,7 +584,7 @@ form {
 }
 
 #contact .contact-content .boutton-group >label {
- width: 150px;
+ width: 120px;
  border: 2px solid;
  -o-border-image: linear-gradient(45deg, var(--ct-gray-light), var(--ct-gray-dark)) 1;
  border-image: linear-gradient(45deg, var(--ct-gray-light), var(--ct-gray-dark)) 1;
@@ -574,18 +614,18 @@ form {
 }
 
 #contact .contact-content ::-moz-placeholder {
- color: var(--ct-white-dark);
+ color: var(--ct-white);
  font-family: "Rajdhani";
  font-size: 18px;
 }
 
 #contact .contact-content :-ms-input-placeholder {
- color: var(--ct-white-dark);
+ color: var(--ct-white);
  font-size: 18px;
 }
 
 #contact .contact-content ::placeholder {
- color: var(--ct-white-dark);
+ color: var(--ct-white);
  font-size: 18px;
 }
 

@@ -12,9 +12,11 @@ import img15 from '../assets/images/img15.png'
 import img12 from '../assets/images/img12.png';
 import Polygon from '../assets/icones/Polygon.png'
 import Polygon1 from '../assets/icones/Polygon-1.png'
+import player from '../assets/icones/icon_player.png'
 import guillemets from '../assets/icones/icon_guillemets_1.png'
 import guillemets1 from '../assets/icones/icon_guillemets_2.png'
 import bataille from '../assets/images/img11.png'
+import team from '../assets/images/img16.png'
 import MultimediaComponent from '../components/multimedia'
 
 function Home() {
@@ -121,14 +123,16 @@ function Home() {
                             </div>
                         </div>
                         <div className="multimedia-bande-annonce">
+                            <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
                             <a href="" target="_blank">
-                                <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
+                                <img src={player} alt="btn player" />   
                             </a>
                         </div>
                     </div>
             </section>
                 <div className="contact-section" id="contact">
                     <div className="container">
+                        <img src={team} alt="img16" />
                         <div className="contact-title">
                             <h3>PRENONS CONTACT</h3>
                         </div>
