@@ -153,7 +153,7 @@ ul  {
   display: inline-block;
 }
 
-.superman-nav .navbar .navbar-nav .nav-item{
+.superman-nav .navbar .navbar-nav .nav-item {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 0;
@@ -163,19 +163,13 @@ ul  {
   position: relative;
 }
 
-.superman-nav .navbar .navbar-nav .nav-item > .nav-link {
+.superman-nav .navbar .navbar-nav .nav-item .nav-link {
   font-size: 25px;
   font-weight: 500;
   font-family: 'Rajdhani';
   color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
+  text-transform: uppercase;  
   margin-left: auto;
-}
-
-.superman-nav .navbar .navbar-nav .nav-item > .nav-link.active {
-  text-decoration: underline 2px;
-  font-weight: bolder;
 }
 
 /**************************************
@@ -443,7 +437,8 @@ font-family: 'Rajdhani';
 
 .icon-button-next {
  position: relative;
- left: 86%;
+ margin-left: 100px;
+ left: 100%;
  bottom: 200px;
  cursor: pointer;
 }

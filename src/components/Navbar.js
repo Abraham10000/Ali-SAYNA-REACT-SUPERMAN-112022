@@ -21,13 +21,13 @@ function Navbar() {
                                     <Link to='/' className='nav-link'>HOME</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-link'>GAME</Link>
+                                    <Link to='/game' className='nav-link'>GAME</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-link'>E-SHOP</Link>
+                                    <Link to='/eshop' className='nav-link'>E-SHOP</Link>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/' className='nav-link'>MON COMPTE</Link>
+                                    <Link to='/moncompte' className='nav-link'>MON COMPTE</Link>
                                 </li>
                             </ul>
                         </div>

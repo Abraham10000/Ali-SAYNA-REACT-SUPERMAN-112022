@@ -14,10 +14,10 @@ function App() {
       <Router>
         <Navbar />
         <Intro />
-        <Routes>
+        <Routes>         
           <Route path='/' element = {<Home />} />
-          <Route path='Eshop' element = {<Eshop />}/>
-          <Route path='Game' element = {<Game />}/>
+          <Route path='eshop' element = {<Eshop />}/>
+          <Route path='game' element = {<Game />}/>
         </Routes>        
         <Footer />
       </Router>     

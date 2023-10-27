@@ -115,20 +115,17 @@ function Home() {
                                 <h5>Superman Man of Steel</h5>
                                 <span>IMDB:<small> 7.1</small></span>
                                 <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent de détruire la planète.</p>
-                            </div>
-                            <MultimediaComponent />
-                            </div>
-                            <div className="icon-button-next">
-                                <img src={Polygon} alt="polygon" />
-                            </div>
+                            </div>                            
                         </div>
-                        <div className="multimedia-bande-annonce">
-                            <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
-                            <a href="" target="_blank">
-                                <img src={player} alt="btn player" />   
-                            </a>
-                        </div>
+                        <MultimediaComponent />                        
                     </div>
+                    <div className="multimedia-bande-annonce">
+                        <img src={img15} alt="bande annonce" title="Bande annonce original de Superman sur Youtube" />
+                        <a href="" target="_blank">
+                            <img src={player} alt="btn player" />   
+                        </a>
+                    </div>
+                </div>
             </section>
             <div className="contact-section" id="contact">
                 <div className="container">

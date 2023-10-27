@@ -11,21 +11,12 @@ function MultimediaComponent() {
     };
 
     return (
-        <div className="multimedia-content">
-            <div className="icon-button-prev">
-                <img src={Polygon1} alt="polygon" />
-            </div>
+        <div className="multimedia-card">                    
             {isCardVisible && (
                 <div className="multimedia-card">
                     <div className="card-icon">
                         <img src={img12} alt="multimedia icon" />
-                    </div>
-                    <div className="card-content">
-                        <h4>Action, Adventure</h4>
-                        <h5>Superman Man of Steel</h5>
-                        <span>IMDB:<small> 7.1</small></span>
-                        <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent de détruire la planète.</p>
-                    </div>
+                    </div>                    
                     <div className="card-content">
                         <h4>Action, Adventure</h4>
                         <h5>Superman (1978)</h5>
